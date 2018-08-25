@@ -17,7 +17,20 @@ struct RoomModel {
     let size: String
     let peopleLimit: String
     let hasWifi: Bool
-    let food: String
+    let meals: String
     let surplus: String
     //...
+}
+
+extension RoomModel {
+    
+    // Mock Data =>
+    func detailInfo() -> [(String, String)] {
+        return [
+            ("Room Size", size),
+            ("Fits", peopleLimit),
+            ("Meals", meals),
+            ("Wifi", hasWifi ? "YES" : "NO")
+        ]
+    }
 }

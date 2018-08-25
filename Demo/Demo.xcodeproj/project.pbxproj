@@ -18,6 +18,8 @@
 		11266DA6212EFE0800713E85 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11266DA5212EFE0800713E85 /* Store.swift */; };
 		11266DA8212EFE1F00713E85 /* RoomMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11266DA7212EFE1F00713E85 /* RoomMock.swift */; };
 		11266DAA212F092F00713E85 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11266DA9212F092F00713E85 /* SettingViewController.swift */; };
+		11FD9FE5213151BD00D43887 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD9FE4213151BD00D43887 /* DetailCell.swift */; };
+		11FD9FE721315DF000D43887 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD9FE621315DF000D43887 /* SelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		11266DA5212EFE0800713E85 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		11266DA7212EFE1F00713E85 /* RoomMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomMock.swift; sourceTree = "<group>"; };
 		11266DA9212F092F00713E85 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		11FD9FE4213151BD00D43887 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		11FD9FE621315DF000D43887 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 				11266D9D212EFD7F00713E85 /* ListViewController.swift */,
 				11266D9F212EFD8D00713E85 /* DetailViewController.swift */,
 				11266DA9212F092F00713E85 /* SettingViewController.swift */,
+				11FD9FE621315DF000D43887 /* SelectionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				11266DA1212EFDB600713E85 /* RoomCell.swift */,
+				11FD9FE4213151BD00D43887 /* DetailCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,8 +201,10 @@
 			files = (
 				11266DA0212EFD8D00713E85 /* DetailViewController.swift in Sources */,
 				11266D9E212EFD7F00713E85 /* ListViewController.swift in Sources */,
+				11FD9FE5213151BD00D43887 /* DetailCell.swift in Sources */,
 				11266DA8212EFE1F00713E85 /* RoomMock.swift in Sources */,
 				11266DAA212F092F00713E85 /* SettingViewController.swift in Sources */,
+				11FD9FE721315DF000D43887 /* SelectionViewController.swift in Sources */,
 				11266DA4212EFDFD00713E85 /* RoomModel.swift in Sources */,
 				11266DA6212EFE0800713E85 /* Store.swift in Sources */,
 				11266DA2212EFDB600713E85 /* RoomCell.swift in Sources */,

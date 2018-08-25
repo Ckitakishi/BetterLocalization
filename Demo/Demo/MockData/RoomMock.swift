@@ -19,7 +19,7 @@ final class RoomMock {
                               size: "35",
                               peopleLimit: "2",
                               hasWifi: true,
-                              food: "Breakfast + Dinner",
+                              meals: "Breakfast + Dinner",
                               surplus: "3")
         roomItems = [room1]
     }
