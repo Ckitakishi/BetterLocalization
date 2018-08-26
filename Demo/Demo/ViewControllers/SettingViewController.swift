@@ -8,7 +8,8 @@
 
 import UIKit
 
-let sectionTitles = ["Language", "Currency"]
+let sectionTitles = [NSLocalizedString("setting.language", comment: "language of setting view"),
+                     NSLocalizedString("setting.currency", comment: "currency of setting view")]
 
 class SettingViewController: UITableViewController {
     

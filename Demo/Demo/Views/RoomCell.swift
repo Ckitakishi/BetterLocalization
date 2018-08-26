@@ -17,7 +17,7 @@ class RoomCell: UITableViewCell {
     
     var cellDataSource: RoomModel! {
         didSet {
-            priceLabel.text = cellDataSource.price
+            priceLabel.text = FormattersCache().priceString(cellDataSource.price)
             nameLabel.text = cellDataSource.name
             // TODO:
             // iconImageView

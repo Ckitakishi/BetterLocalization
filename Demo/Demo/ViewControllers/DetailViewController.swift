@@ -11,7 +11,9 @@ import UIKit
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var detailTableView: UITableView!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var pricelabel: UILabel!
+    @IBOutlet weak var surplusLabel: UILabel!
     
     var roomDataSource: RoomModel?
     
@@ -25,7 +27,15 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         detailTableView.dataSource = self
-        roomDataSource = RoomMock.shared.roomItems[0]
+        
+        nameLabel.text = roomDataSource?.name
+        
+        if let price = roomDataSource?.price {
+            pricelabel.text = FormattersCache().priceString(price)
+        }
+        
+        surplusLabel.text = String.localizedStringWithFormat(NSLocalizedString("detail.only %d room left",comment: "surplus"),(roomDataSource?.surplus)!)
+        
         guard let details = roomDataSource?.detailInfo() else {
             fatalError("..!")
         }

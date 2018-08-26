@@ -12,13 +12,13 @@ struct RoomModel {
     // Make most of properties as String..
     // List
     let name: String
-    let price: String
+    let price: Double
     // Detail
-    let size: String
+    let size: Double
     let peopleLimit: String
     let hasWifi: Bool
     let meals: String
-    let surplus: String
+    let surplus: Int
     //...
 }
 
@@ -27,10 +27,12 @@ extension RoomModel {
     // Mock Data =>
     func detailInfo() -> [(String, String)] {
         return [
-            ("Room Size", size),
-            ("Fits", peopleLimit),
-            ("Meals", meals),
-            ("Wifi", hasWifi ? "YES" : "NO")
+            (NSLocalizedString("detail.roomsize", comment: "title of room size"), FormattersCache().acreageString(size)),
+            (NSLocalizedString("detail.fits", comment: "title of poople limit"), peopleLimit),
+            (NSLocalizedString("detail.meals", comment: "title of meals"), meals),
+            (NSLocalizedString("detail.wifi", comment: "title of wifi"), hasWifi ?
+                NSLocalizedString("detail.yes", comment: "has wifi?(yes)") :
+                NSLocalizedString("detail.no", comment: "has wifi?(no)"))
         ]
     }
 }

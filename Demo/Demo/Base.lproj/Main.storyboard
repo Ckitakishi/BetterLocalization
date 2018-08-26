@@ -30,16 +30,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wSm-1o-37B">
-                                                    <rect key="frame" x="80" y="28" width="41" height="26.333333333333332"/>
+                                                    <rect key="frame" x="80" y="29" width="37.666666666666664" height="24"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c1o-08-7I5">
-                                                    <rect key="frame" x="280.33333333333337" y="26" width="59.666666666666664" height="28.666666666666668"/>
+                                                    <rect key="frame" x="285" y="27" width="55" height="26.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <color key="textColor" red="0.88235294819999999" green="0.29019609089999998" blue="0.34901961679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -223,12 +223,12 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBx-1Q-5sy">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="164"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic Room" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJc-Y4-CuD">
-                                                <rect key="frame" x="8" y="8" width="234" height="42"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic Room" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJc-Y4-CuD">
+                                                <rect key="frame" x="8" y="8" width="187.66666666666666" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="UGJ-Tk-zaq"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -242,8 +242,8 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2E-Nl-kSU">
-                                                <rect key="frame" x="290.33333333333331" y="8" width="76.666666666666686" height="42"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <rect key="frame" x="195.66666666666663" y="8" width="171.33333333333337" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -262,12 +262,12 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Ddl-PF-06W" firstAttribute="top" secondItem="50C-Lk-NJy" secondAttribute="bottom" constant="8" id="5OJ-q7-Wr2"/>
-                                            <constraint firstItem="K2E-Nl-kSU" firstAttribute="leading" secondItem="RJc-Y4-CuD" secondAttribute="trailing" constant="48.333333333333314" id="5aa-IG-y2O"/>
+                                            <constraint firstItem="K2E-Nl-kSU" firstAttribute="leading" secondItem="RJc-Y4-CuD" secondAttribute="trailing" id="5aa-IG-y2O"/>
                                             <constraint firstAttribute="height" constant="164" id="BFk-gc-OvA"/>
                                             <constraint firstItem="RJc-Y4-CuD" firstAttribute="top" secondItem="tBx-1Q-5sy" secondAttribute="top" constant="8" id="JyU-i1-o0g"/>
                                             <constraint firstItem="K2E-Nl-kSU" firstAttribute="top" secondItem="RJc-Y4-CuD" secondAttribute="top" id="MYc-ye-hHK"/>
                                             <constraint firstAttribute="trailing" secondItem="K2E-Nl-kSU" secondAttribute="trailing" constant="8" id="Ovi-o9-iZ3"/>
-                                            <constraint firstItem="RJc-Y4-CuD" firstAttribute="width" secondItem="tBx-1Q-5sy" secondAttribute="width" multiplier="2:3" constant="-16" id="Ows-sE-Z61"/>
+                                            <constraint firstItem="RJc-Y4-CuD" firstAttribute="width" secondItem="tBx-1Q-5sy" secondAttribute="width" multiplier="1:2" id="Ows-sE-Z61"/>
                                             <constraint firstItem="50C-Lk-NJy" firstAttribute="top" secondItem="RJc-Y4-CuD" secondAttribute="bottom" constant="8" id="Qjv-IW-IQL"/>
                                             <constraint firstItem="RJc-Y4-CuD" firstAttribute="leading" secondItem="tBx-1Q-5sy" secondAttribute="leading" constant="8" id="RVI-BG-Pxy"/>
                                             <constraint firstAttribute="bottom" secondItem="Ddl-PF-06W" secondAttribute="bottom" constant="8" id="Vh4-tC-4fY"/>
@@ -304,7 +304,9 @@
                     </view>
                     <connections>
                         <outlet property="detailTableView" destination="NbN-IA-Kzv" id="23h-Gg-L6Z"/>
+                        <outlet property="nameLabel" destination="RJc-Y4-CuD" id="cPR-3k-xnq"/>
                         <outlet property="pricelabel" destination="K2E-Nl-kSU" id="ZdK-o6-fS5"/>
+                        <outlet property="surplusLabel" destination="50C-Lk-NJy" id="gmx-2p-uEC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wGO-Zr-R2A" userLabel="First Responder" sceneMemberID="firstResponder"/>

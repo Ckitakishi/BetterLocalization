@@ -26,11 +26,26 @@ class ListViewController: UIViewController {
         
         roomDataSource = RoomMock.shared.roomItems
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! RoomCell
+        let indexPath = listTableView.indexPath(for: cell)
+        
+        guard let des = segue.destination as? DetailViewController else {
+            fatalError()
+        }
+        if let row = indexPath?.row {
+            des.roomDataSource = roomDataSource[row]
+        }
+    }
 }
 
 // Mark: UITableViewDelegate
 extension ListViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
 
 // Mark: UITableViewDataSource
@@ -44,6 +59,10 @@ extension ListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RoomCell.self), for: indexPath) as! RoomCell
         cell.cellDataSource = roomDataSource[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return FormattersCache().dateString(Date())
     }
 }
 

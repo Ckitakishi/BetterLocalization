@@ -14,13 +14,22 @@ final class RoomMock {
     var roomItems: [RoomModel] = []
     
     init() {
-        let room1 = RoomModel(name: "Basic Room",
-                              price: "10000",
-                              size: "35",
+        let room1 = RoomModel(name: NSLocalizedString("mock.room.name", comment: "room name"),
+                              price: 10000,
+                              size: 35,
                               peopleLimit: "2",
                               hasWifi: true,
-                              meals: "Breakfast + Dinner",
-                              surplus: "3")
-        roomItems = [room1]
+                              meals: NSLocalizedString("mock.room.meals", comment: "meals of room"),
+                              surplus: 0)
+        
+        let room2 = RoomModel(name: NSLocalizedString("mock.room.name", comment: "room name"),
+                              price: 12000,
+                              size: 38,
+                              peopleLimit: "2",
+                              hasWifi: true,
+                              meals: NSLocalizedString("mock.room.meals", comment: "meals of room"),
+                              surplus: 3)
+        
+        roomItems = [room1, room2]
     }
 }
