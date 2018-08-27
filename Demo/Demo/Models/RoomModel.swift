@@ -27,7 +27,7 @@ extension RoomModel {
     // Mock Data =>
     func detailInfo() -> [(String, String)] {
         return [
-            (NSLocalizedString("detail.roomsize", comment: "title of room size"), FormattersCache().acreageString(size)),
+            (NSLocalizedString("detail.roomsize", comment: "title of room size"), FormattersCache.acreageString(size)),
             (NSLocalizedString("detail.fits", comment: "title of poople limit"), peopleLimit),
             (NSLocalizedString("detail.meals", comment: "title of meals"), meals),
             (NSLocalizedString("detail.wifi", comment: "title of wifi"), hasWifi ?

@@ -3,13 +3,13 @@
 "50C-Lk-NJy.text" = "Only 3 rooms left!";
 
 /* Class = "UITabBarItem"; title = "Setting"; ObjectID = "Ba1-CQ-m0k"; */
-"Ba1-CQ-m0k.title" = "Setting";
+"Ba1-CQ-m0k.title" = "設定";
 
 /* Class = "UIButton"; normalTitle = "Reserve"; ObjectID = "Ddl-PF-06W"; */
-"Ddl-PF-06W.normalTitle" = "Reserve";
+"Ddl-PF-06W.normalTitle" = "予約";
 
 /* Class = "UITabBarItem"; title = "Contents"; ObjectID = "FIE-Hm-0oh"; */
-"FIE-Hm-0oh.title" = "Contents";
+"FIE-Hm-0oh.title" = "内容";
 
 /* Class = "UILabel"; text = "Subtitle"; ObjectID = "JYt-if-iPf"; */
 "JYt-if-iPf.text" = "Subtitle";

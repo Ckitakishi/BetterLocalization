@@ -13,11 +13,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>zero</key>
-			<string>No room left!</string>
-			<key>one</key>
-			<string>Only %d room left!</string>
+			<string>売り切れ！</string>
 			<key>other</key>
-			<string>Only %d rooms left!</string>
+			<string>あと %d 部屋！</string>
 		</dict>
 	</dict>
 </dict>

@@ -27,6 +27,11 @@ class ListViewController: UIViewController {
         roomDataSource = RoomMock.shared.roomItems
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.addObserver(self, selector: #selector(updateView), name: NSNotification.Name(CurrencyChangeNotification), object: nil)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! RoomCell
         let indexPath = listTableView.indexPath(for: cell)
@@ -37,6 +42,10 @@ class ListViewController: UIViewController {
         if let row = indexPath?.row {
             des.roomDataSource = roomDataSource[row]
         }
+    }
+    
+    @objc func updateView() {
+        listTableView.reloadData()
     }
 }
 
@@ -62,7 +71,7 @@ extension ListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return FormattersCache().dateString(Date())
+        return FormattersCache.dateString(Date())
     }
 }
 

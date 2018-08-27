@@ -17,14 +17,18 @@ enum SelectionType {
 class SelectionViewController: UITableViewController {
     
     var codes: [String]!
+    var languageCodes :[String]!
     
     var selectionType: SelectionType = .undefined {
         didSet {
             switch selectionType {
             case .currency:
                 codes = NSLocale.commonISOCurrencyCodes
+                break
             case .language:
                 codes = ["中文", "English", "日本語", "العربية"]
+                languageCodes = ["zh-Hans", "en-US", "ja-JP", "ar-Ar"]
+                break
             default:
                 codes = []
             }
@@ -40,7 +44,22 @@ class SelectionViewController: UITableViewController {
     }
     
     @IBAction func done(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: {
+            let indexPath = self.tableView.indexPathForSelectedRow
+            
+            switch self.selectionType {
+            case .currency:
+                Localize.setCurrentCurrency(self.codes[(indexPath?.row)!])
+                break
+            case .language:
+                Localize.setCurrentLanguage(self.languageCodes[(indexPath?.row)!])
+                break
+            default:
+                break
+            }
+            // clear all formatter cache
+            FormattersCache.clearAllFormatter()
+        })
     }
 }
 

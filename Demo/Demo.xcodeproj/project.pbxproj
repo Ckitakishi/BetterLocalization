@@ -23,6 +23,7 @@
 		117F23722132ED8400F1816A /* FormattersCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117F23712132ED8400F1816A /* FormattersCache.swift */; };
 		11FD9FE5213151BD00D43887 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD9FE4213151BD00D43887 /* DetailCell.swift */; };
 		11FD9FE721315DF000D43887 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD9FE621315DF000D43887 /* SelectionViewController.swift */; };
+		44C78C74213395FF00A40F1B /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C78C73213395FF00A40F1B /* Localize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		117F23712132ED8400F1816A /* FormattersCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattersCache.swift; sourceTree = "<group>"; };
 		11FD9FE4213151BD00D43887 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		11FD9FE621315DF000D43887 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		44C78C73213395FF00A40F1B /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				117F23702132ED6900F1816A /* Formatters */,
 				11266D9C212EFD2500713E85 /* MockData */,
 				11266D86212EFCA700713E85 /* AppDelegate.swift */,
+				44C78C73213395FF00A40F1B /* Localize.swift */,
 				110DA6B92132B1F9006E8973 /* Localizable.strings */,
 				110DA6C92132BD4D006E8973 /* Localizable.stringsdict */,
 				11266D8A212EFCA700713E85 /* Main.storyboard */,
@@ -230,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44C78C74213395FF00A40F1B /* Localize.swift in Sources */,
 				11266DA0212EFD8D00713E85 /* DetailViewController.swift in Sources */,
 				11266D9E212EFD7F00713E85 /* ListViewController.swift in Sources */,
 				117F23722132ED8400F1816A /* FormattersCache.swift in Sources */,

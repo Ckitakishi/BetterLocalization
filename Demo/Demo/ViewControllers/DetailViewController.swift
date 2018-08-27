@@ -30,9 +30,7 @@ class DetailViewController: UIViewController {
         
         nameLabel.text = roomDataSource?.name
         
-        if let price = roomDataSource?.price {
-            pricelabel.text = FormattersCache().priceString(price)
-        }
+        updatePrice()
         
         surplusLabel.text = String.localizedStringWithFormat(NSLocalizedString("detail.only %d room left",comment: "surplus"),(roomDataSource?.surplus)!)
         
@@ -40,6 +38,17 @@ class DetailViewController: UIViewController {
             fatalError("..!")
         }
         detailDataSource = details
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.addObserver(self, selector: #selector(updatePrice), name: NSNotification.Name(CurrencyChangeNotification), object: nil)
+    }
+    
+    @objc func updatePrice() {
+        if let price = roomDataSource?.price {
+            pricelabel.text = FormattersCache.priceString(price)
+        }
     }
 }
 

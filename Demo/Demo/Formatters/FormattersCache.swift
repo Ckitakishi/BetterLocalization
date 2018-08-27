@@ -12,9 +12,15 @@ var dateFormatter: DateFormatter?
 var priceFormatter: NumberFormatter?
 var acreageFormatter: MeasurementFormatter?
 
-class FormattersCache: NSObject {
+open class FormattersCache: NSObject {
     
-    func dateString(_ date: Date) -> String {
+    class func clearAllFormatter() {
+        dateFormatter = nil
+        priceFormatter = nil
+        acreageFormatter = nil
+    }
+    
+    class func dateString(_ date: Date) -> String {
         if (dateFormatter == nil) {
             dateFormatter = DateFormatter()
             dateFormatter?.dateStyle = .full
@@ -22,17 +28,17 @@ class FormattersCache: NSObject {
         return dateFormatter!.string(from: date)
     }
     
-    func priceString(_ price: Double) -> String {
+    class func priceString(_ price: Double) -> String {
         if (priceFormatter == nil) {
             priceFormatter = NumberFormatter()
             priceFormatter?.numberStyle = .currency
-            priceFormatter?.currencyCode = "CNY"
+            priceFormatter?.currencyCode = Localize.currentCurrency()
             priceFormatter?.minimumFractionDigits = 0
         }
         return priceFormatter!.string(from: price as NSNumber)!
     }
     
-    func acreageString(_ acreage: Double) -> String {
+    class func acreageString(_ acreage: Double) -> String {
         if (acreageFormatter == nil) {
             acreageFormatter = MeasurementFormatter()
             acreageFormatter?.unitStyle = .medium
