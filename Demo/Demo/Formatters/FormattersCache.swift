@@ -23,7 +23,7 @@ open class FormattersCache: NSObject {
     class func dateString(_ date: Date) -> String {
         if (dateFormatter == nil) {
             dateFormatter = DateFormatter()
-            dateFormatter?.dateStyle = .full
+            dateFormatter?.dateStyle = .long
         }
         return dateFormatter!.string(from: date)
     }

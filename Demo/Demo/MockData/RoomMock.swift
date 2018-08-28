@@ -30,6 +30,14 @@ final class RoomMock {
                               meals: NSLocalizedString("mock.room.meals", comment: "meals of room"),
                               surplus: 3)
         
-        roomItems = [room1, room2]
+        let room3 = RoomModel(name: NSLocalizedString("mock.room.name", comment: "room name"),
+                              price: 14000,
+                              size: 45,
+                              peopleLimit: "2",
+                              hasWifi: true,
+                              meals: NSLocalizedString("mock.room.meals", comment: "meals of room"),
+                              surplus: 1)
+        
+        roomItems = [room1, room2, room3]
     }
 }

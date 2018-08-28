@@ -181,7 +181,7 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" separatorInsetReference="fromAutomaticInsets" allowsSelection="NO" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NbN-IA-Kzv">
-                                        <rect key="frame" x="0.0" y="164" width="375" height="560"/>
+                                        <rect key="frame" x="0.0" y="414" width="375" height="310"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                         <prototypes>
@@ -216,7 +216,7 @@
                                         </prototypes>
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBx-1Q-5sy">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="164"/>
+                                        <rect key="frame" x="0.0" y="250" width="375" height="164"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic Room" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJc-Y4-CuD">
                                                 <rect key="frame" x="8" y="8" width="187.66666666666666" height="42"/>
@@ -273,13 +273,22 @@
                                             <constraint firstItem="Ddl-PF-06W" firstAttribute="leading" secondItem="tBx-1Q-5sy" secondAttribute="leading" constant="8" id="wuz-WM-Ccy"/>
                                         </constraints>
                                     </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basicroom.png" translatesAutoresizingMaskIntoConstraints="NO" id="HKQ-ev-XI3">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="pX0-pE-lIL"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="tBx-1Q-5sy" firstAttribute="top" secondItem="OUa-ox-zdb" secondAttribute="top" id="SAP-ho-zri"/>
+                                    <constraint firstItem="tBx-1Q-5sy" firstAttribute="top" secondItem="HKQ-ev-XI3" secondAttribute="bottom" id="Jtd-JL-QEy"/>
+                                    <constraint firstItem="HKQ-ev-XI3" firstAttribute="top" secondItem="OUa-ox-zdb" secondAttribute="top" id="SBf-D4-BvT"/>
                                     <constraint firstAttribute="bottom" secondItem="NbN-IA-Kzv" secondAttribute="bottom" id="T4N-du-yMO"/>
                                     <constraint firstAttribute="trailing" secondItem="NbN-IA-Kzv" secondAttribute="trailing" id="UBb-zr-DTy"/>
                                     <constraint firstItem="NbN-IA-Kzv" firstAttribute="top" secondItem="tBx-1Q-5sy" secondAttribute="bottom" id="UPi-qU-a6W"/>
+                                    <constraint firstAttribute="trailing" secondItem="HKQ-ev-XI3" secondAttribute="trailing" id="jdb-oz-XHZ"/>
                                     <constraint firstItem="NbN-IA-Kzv" firstAttribute="leading" secondItem="OUa-ox-zdb" secondAttribute="leading" id="nOj-Xe-lK1"/>
+                                    <constraint firstItem="HKQ-ev-XI3" firstAttribute="leading" secondItem="OUa-ox-zdb" secondAttribute="leading" id="pYT-sW-ejm"/>
                                     <constraint firstItem="tBx-1Q-5sy" firstAttribute="leading" secondItem="OUa-ox-zdb" secondAttribute="leading" id="q4e-Wh-dlS"/>
                                     <constraint firstAttribute="trailing" secondItem="tBx-1Q-5sy" secondAttribute="trailing" id="t3I-Ov-BDJ"/>
                                 </constraints>
@@ -289,9 +298,11 @@
                         <constraints>
                             <constraint firstItem="OUa-ox-zdb" firstAttribute="leading" secondItem="TQr-Te-SKs" secondAttribute="leading" id="7X3-nK-PtH"/>
                             <constraint firstItem="TQr-Te-SKs" firstAttribute="bottom" secondItem="OUa-ox-zdb" secondAttribute="bottom" id="8eW-S8-Xhj"/>
-                            <constraint firstItem="tBx-1Q-5sy" firstAttribute="top" secondItem="TQr-Te-SKs" secondAttribute="top" id="Opg-Mv-1PC"/>
+                            <constraint firstItem="TQr-Te-SKs" firstAttribute="trailing" secondItem="HKQ-ev-XI3" secondAttribute="trailing" id="GLK-jm-y5l"/>
+                            <constraint firstItem="HKQ-ev-XI3" firstAttribute="top" secondItem="TQr-Te-SKs" secondAttribute="top" id="KAi-Hp-4Q3"/>
                             <constraint firstItem="tBx-1Q-5sy" firstAttribute="width" secondItem="OEh-ga-0iB" secondAttribute="width" id="WD4-W3-1bY"/>
                             <constraint firstItem="TQr-Te-SKs" firstAttribute="bottom" secondItem="NbN-IA-Kzv" secondAttribute="bottom" id="Ymc-dI-kf4"/>
+                            <constraint firstItem="HKQ-ev-XI3" firstAttribute="leading" secondItem="TQr-Te-SKs" secondAttribute="leading" id="f3v-FE-G6l"/>
                             <constraint firstItem="TQr-Te-SKs" firstAttribute="trailing" secondItem="OUa-ox-zdb" secondAttribute="trailing" id="jyc-ig-g6Y"/>
                             <constraint firstItem="OUa-ox-zdb" firstAttribute="top" secondItem="TQr-Te-SKs" secondAttribute="top" id="ywZ-Mu-mgS"/>
                         </constraints>
@@ -326,12 +337,12 @@
             </objects>
             <point key="canvasLocation" x="64.799999999999997" y="-665.21739130434787"/>
         </scene>
-        <!--HotelA-->
+        <!--HotelX-->
         <scene sceneID="L9p-eb-y7E">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="YDx-sc-1JP" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="HotelA" id="mF0-Ub-10d"/>
+                    <navigationItem key="navigationItem" title="HotelX" id="mF0-Ub-10d"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l5L-2q-dYB">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -366,6 +377,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="basicroom.png" width="640" height="426"/>
         <image name="placeholder" width="50" height="50"/>
     </resources>
 </document>

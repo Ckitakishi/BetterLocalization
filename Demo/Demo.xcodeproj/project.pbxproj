@@ -20,6 +20,7 @@
 		11266DA6212EFE0800713E85 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11266DA5212EFE0800713E85 /* Store.swift */; };
 		11266DA8212EFE1F00713E85 /* RoomMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11266DA7212EFE1F00713E85 /* RoomMock.swift */; };
 		11266DAA212F092F00713E85 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11266DA9212F092F00713E85 /* SettingViewController.swift */; };
+		114A1B162134511300A6055E /* basicroom.png in Resources */ = {isa = PBXBuildFile; fileRef = 114A1B182134511300A6055E /* basicroom.png */; };
 		117F23722132ED8400F1816A /* FormattersCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117F23712132ED8400F1816A /* FormattersCache.swift */; };
 		11FD9FE5213151BD00D43887 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD9FE4213151BD00D43887 /* DetailCell.swift */; };
 		11FD9FE721315DF000D43887 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD9FE621315DF000D43887 /* SelectionViewController.swift */; };
@@ -51,6 +52,10 @@
 		11266DA5212EFE0800713E85 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		11266DA7212EFE1F00713E85 /* RoomMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomMock.swift; sourceTree = "<group>"; };
 		11266DA9212F092F00713E85 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		114A1B172134511300A6055E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/basicroom.png"; sourceTree = "<group>"; };
+		114A1B192134511700A6055E /* ar */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ar; path = ar.lproj/basicroom.png; sourceTree = "<group>"; };
+		114A1B1A2134511900A6055E /* ja */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ja; path = ja.lproj/basicroom.png; sourceTree = "<group>"; };
+		114A1B1B2134511B00A6055E /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/basicroom.png; sourceTree = "<group>"; };
 		117F23712132ED8400F1816A /* FormattersCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattersCache.swift; sourceTree = "<group>"; };
 		11FD9FE4213151BD00D43887 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		11FD9FE621315DF000D43887 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
@@ -144,9 +149,18 @@
 		11266D9C212EFD2500713E85 /* MockData */ = {
 			isa = PBXGroup;
 			children = (
+				114A1B15213450FD00A6055E /* Resource */,
 				11266DA7212EFE1F00713E85 /* RoomMock.swift */,
 			);
 			path = MockData;
+			sourceTree = "<group>";
+		};
+		114A1B15213450FD00A6055E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				114A1B182134511300A6055E /* basicroom.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		117F23702132ED6900F1816A /* Formatters */ = {
@@ -218,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114A1B162134511300A6055E /* basicroom.png in Resources */,
 				11266D91212EFCA900713E85 /* LaunchScreen.storyboard in Resources */,
 				110DA6B72132B1F9006E8973 /* Localizable.strings in Resources */,
 				11266D8E212EFCA900713E85 /* Assets.xcassets in Resources */,
@@ -290,6 +305,17 @@
 				11266D90212EFCA900713E85 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		114A1B182134511300A6055E /* basicroom.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				114A1B172134511300A6055E /* zh-Hans */,
+				114A1B192134511700A6055E /* ar */,
+				114A1B1A2134511900A6055E /* ja */,
+				114A1B1B2134511B00A6055E /* en */,
+			);
+			name = basicroom.png;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
