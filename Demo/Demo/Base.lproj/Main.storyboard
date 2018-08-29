@@ -49,6 +49,9 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="RoomCellTest">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                         <connections>
                                             <outlet property="iconImageView" destination="6e9-z1-JjN" id="xhM-Ph-nD3"/>
                                             <outlet property="nameLabel" destination="wSm-1o-37B" id="OxW-4x-xXz"/>

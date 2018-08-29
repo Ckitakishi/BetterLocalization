@@ -19,6 +19,15 @@
 			<key>other</key>
 			<string>Only %d rooms left!</string>
 		</dict>
+		<key>NSStringVariableWidthRuleType</key>
+		<dict>
+			<key>20</key>
+			<string>Hi</string>
+			<key>25</key>
+			<string>Hello</string>
+			<key>50</key>
+			<string>Hello!!!!!!</string>
+		</dict>
 	</dict>
 </dict>
 </plist>

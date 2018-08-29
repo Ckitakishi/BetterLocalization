@@ -15,8 +15,6 @@ class SettingViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NSLocale.current
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
