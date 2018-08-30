@@ -13,7 +13,7 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>zero</key>
-			<string>売り切れ！</string>
+			<string>売れ切り！</string>
 			<key>other</key>
 			<string>あと %d 部屋！</string>
 		</dict>
