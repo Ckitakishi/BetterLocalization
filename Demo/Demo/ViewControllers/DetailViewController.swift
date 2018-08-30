@@ -32,7 +32,7 @@ class DetailViewController: UIViewController {
         
         updatePrice()
         
-        surplusLabel.text = String.localizedStringWithFormat(NSLocalizedString("wrongdetail.only %d room left",comment: "surplus"),(roomDataSource?.surplus)!)
+        surplusLabel.text = String.localizedStringWithFormat(NSLocalizedString("detail.only %d room left",comment: "surplus"),(roomDataSource?.surplus)!)
         
         guard let details = roomDataSource?.detailInfo() else {
             fatalError("..!")

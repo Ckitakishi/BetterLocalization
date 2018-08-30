@@ -3,13 +3,13 @@
 "50C-Lk-NJy.text" = "Only 3 rooms left!";
 
 /* Class = "UITabBarItem"; title = "Setting"; ObjectID = "Ba1-CQ-m0k"; */
-"Ba1-CQ-m0k.title" = "Setting";
+"Ba1-CQ-m0k.title" = "ضبط";
 
 /* Class = "UIButton"; normalTitle = "Reserve"; ObjectID = "Ddl-PF-06W"; */
-"Ddl-PF-06W.normalTitle" = "Reserve";
+"Ddl-PF-06W.normalTitle" = "الاحتياطي";
 
 /* Class = "UITabBarItem"; title = "Contents"; ObjectID = "FIE-Hm-0oh"; */
-"FIE-Hm-0oh.title" = "Contents";
+"FIE-Hm-0oh.title" = "محتويات";
 
 /* Class = "UILabel"; text = "Subtitle"; ObjectID = "JYt-if-iPf"; */
 "JYt-if-iPf.text" = "Subtitle";
@@ -24,7 +24,7 @@
 "LNA-SX-dUa.text" = "Title";
 
 /* Class = "UILabel"; text = "Basic Room"; ObjectID = "RJc-Y4-CuD"; */
-"RJc-Y4-CuD.text" = "Basic Room";
+"RJc-Y4-CuD.text" = "غرفة أساسية";
 
 /* Class = "UILabel"; text = "Detail"; ObjectID = "c1o-08-7I5"; */
 "c1o-08-7I5.text" = "Detail";
@@ -33,7 +33,7 @@
 "ei7-Ah-zpr.text" = "Title";
 
 /* Class = "UINavigationItem"; title = "HotelA"; ObjectID = "mF0-Ub-10d"; */
-"mF0-Ub-10d.title" = "HotelA";
+"mF0-Ub-10d.title" = "HotelX";
 
 /* Class = "UILabel"; text = "Title"; ObjectID = "wSm-1o-37B"; */
 "wSm-1o-37B.text" = "Title";

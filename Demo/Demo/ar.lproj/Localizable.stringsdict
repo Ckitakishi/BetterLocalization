@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Only %d room left!</key>
+	<key>detail.only %d room left</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
 		<string>%#@rooms@</string>
@@ -13,11 +13,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>zero</key>
-			<string>No room left!</string>
-			<key>one</key>
-			<string>Only %d room left!</string>
+			<string>لا توجد غرفة متبقية!</string>
 			<key>other</key>
-			<string>Only %d rooms left!</string>
+			<string>فقط d% شمال الغرفة!</string>
 		</dict>
 	</dict>
 </dict>
