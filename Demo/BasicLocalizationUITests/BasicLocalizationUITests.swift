@@ -1,6 +1,6 @@
 //
-//  DemoUITests.swift
-//  DemoUITests
+//  BasicLocalizationUITests.swift
+//  BasicLocalizationUITests
 //
 //  Created by Ckitakishi on 2018/8/29.
 //  Copyright © 2018年 Yuhan Chen. All rights reserved.
