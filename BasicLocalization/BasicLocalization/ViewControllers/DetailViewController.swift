@@ -14,6 +14,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var pricelabel: UILabel!
     @IBOutlet weak var surplusLabel: UILabel!
+    @IBOutlet weak var headerView: UIView!
     
     var roomDataSource: RoomModel?
     
@@ -27,6 +28,8 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         detailTableView.dataSource = self
+        detailTableView.tableHeaderView = headerView
+        detailTableView.sectionHeaderHeight = UITableView.automaticDimension
         
         nameLabel.text = roomDataSource?.name
         
